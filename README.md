@@ -1,4 +1,4 @@
-# Bing Sidebar for Chrome
+# Bing Chat sidebar for Chrome
 
 [**Install from Chrome Web Store**](https://chrome.google.com/webstore/detail/bing-sidebar-for-chrome/ncjedehfkpnliaafimjhdjjeggmfmlgf)
 
