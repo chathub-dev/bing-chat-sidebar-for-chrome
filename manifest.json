@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "Bing Sidebar for Chrome",
+  "description": "Bing sidebar ported from Edge to Chrome",
+  "version": "1.1.0",
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Click to open sidebar"
+  },
+  "side_panel": {
+    "default_path": "sidepanel/index.html"
+  },
+  "host_permissions": ["<all_urls>"],
+  "permissions": ["sidePanel", "declarativeNetRequest", "tabs", "notifications"],
+  "content_scripts": [
+    {
+      "js": ["shell/content.js"],
+      "matches": ["https://*.bing.com/edgesvc/shell*"],
+      "run_at": "document_end",
+      "all_frames": true
+    },
+    {
+      "js": ["shell/inject.js"],
+      "matches": ["https://*.bing.com/edgesvc/shell*"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "world": "MAIN"
+    },
+    {
+      "js": ["libs/pdf.min.js", "content-script.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+I",
+        "mac": "Command+Shift+I"
+      }
+    }
+  }
+}

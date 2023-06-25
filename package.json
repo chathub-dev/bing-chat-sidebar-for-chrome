@@ -1,0 +1,9 @@
+{
+  "name": "bing-sidebar-for-chrome",
+  "version": "1.0.0",
+  "author": "wong2",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chrome": "^0.0.237"
+  }
+}
