@@ -6,6 +6,8 @@ AI-powered Bing sidebar ported from Microsoft Edge to Chrome, with the same feat
 
 ![Screenshot](screenshot.png?raw=true)
 
+[Video demo](https://youtu.be/dIZoB1gUbxE)
+
 ## Supported browsers
 
 This extension uses the [chrome.sidePanel](https://developer.chrome.com/docs/extensions/reference/sidePanel/) API, which is only available since Chrome 114. Therefore it only works with Google Chrome, version 114 or higher, and may not be compatible with other Chromium-based browsers, such as Brave, Arc, Opera, etc.
