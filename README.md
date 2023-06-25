@@ -6,7 +6,7 @@ AI-powered Bing sidebar ported from Microsoft Edge to Chrome, with the same feat
 
 ![Screenshot](screenshot.png?raw=true)
 
-[Video demo](https://youtu.be/dIZoB1gUbxE)
+[Demo video](https://youtu.be/dIZoB1gUbxE)
 
 ## Supported browsers
 
