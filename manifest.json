@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Bing Sidebar for Chrome",
-  "description": "Bing sidebar ported from Edge to Chrome",
-  "version": "1.1.0",
+  "name": "Bing Chat sidebar for Chrome",
+  "description": "Bing Chat sidebar ported from Edge to Chrome",
+  "version": "1.2.0",
   "icons": {
     "16": "icon.png",
     "32": "icon.png",
