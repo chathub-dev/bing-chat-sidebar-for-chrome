@@ -1,5 +1,8 @@
 const iframe = document.getElementById("underside-iframe-container");
-iframe.src = `https://edgeservices.bing.com/edgesvc/shell?&lightschemeovr=1&FORM=SHORUN&udscs=1&udsnav=1&setlang=${navigator.language}&clientscopes=noheader,coauthor,chat,visibilitypm,docvisibility,channelstable,&udsframed=1`;
+
+const darkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+const colorSchemeParam = darkMode ? "darkschemeovr" : "lightschemeovr";
+iframe.src = `https://edgeservices.bing.com/edgesvc/shell?&${colorSchemeParam}=1&FORM=SHORUN&udscs=1&udsnav=1&setlang=${navigator.language}&clientscopes=noheader,coauthor,chat,visibilitypm,docvisibility,channelstable,&udsframed=1`;
 
 function sendEventToIframe(name, args) {
   console.debug("sendEventToIframe", name, JSON.stringify(args));
