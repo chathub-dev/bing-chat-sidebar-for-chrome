@@ -42,7 +42,7 @@
   "commands": {
     "_execute_action": {
       "suggested_key": {
-        "default": "Ctrl+Shift+I",
+        "default": "Ctrl+Shift+K",
         "mac": "Command+Shift+I"
       }
     }
