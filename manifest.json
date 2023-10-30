@@ -22,12 +22,6 @@
   "permissions": ["sidePanel", "declarativeNetRequest", "tabs", "notifications"],
   "content_scripts": [
     {
-      "js": ["shell/content.js"],
-      "matches": ["https://*.bing.com/edgesvc/shell*"],
-      "run_at": "document_end",
-      "all_frames": true
-    },
-    {
       "js": ["shell/inject.js"],
       "matches": ["https://*.bing.com/edgesvc/shell*"],
       "run_at": "document_start",
