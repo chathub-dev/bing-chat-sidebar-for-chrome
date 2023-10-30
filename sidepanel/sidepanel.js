@@ -2,7 +2,7 @@ const iframe = document.getElementById("underside-iframe-container");
 
 const darkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
 const colorSchemeParam = darkMode ? "darkschemeovr" : "lightschemeovr";
-iframe.src = `https://edgeservices.bing.com/edgesvc/shell?&${colorSchemeParam}=1&FORM=SHORUN&udscs=1&udsnav=1&setlang=${navigator.language}&clientscopes=noheader,coauthor,chat,visibilitypm,docvisibility,channelstable,&udsframed=1&extension=${chrome.runtime.id}}`;
+iframe.src = `https://edgeservices.bing.com/edgesvc/shell?&${colorSchemeParam}=1&FORM=SHORUN&udscs=1&udsnav=1&setlang=${navigator.language}&clientscopes=noheader,coauthor,chat,visibilitypm,docvisibility,channelstable,&udsframed=1&extension=${chrome.runtime.id}`;
 
 function sendEventToIframe(name, args) {
   console.debug("sendEventToIframe", name, JSON.stringify(args));
@@ -67,7 +67,7 @@ chrome.tabs.onActivated.addListener(async (activeInfo) => {
 });
 
 chrome.tabs.onUpdated.addListener((_tabId, changeInfo, tab) => {
-  if (changeInfo.status === "complete" && tab.active) {
+  if (tab.active && changeInfo.status === "complete") {
     sendEventToIframe("Discover.Client.TabStripModelChange", {
       eventType: "Activate",
       tabInfo: buildActiveTabInfo(tab),
