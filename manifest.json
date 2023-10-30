@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "AI Chat sidebar for Chrome",
-  "description": "Bing Chat sidebar ported from Edge to Chrome",
-  "version": "1.5.0",
+  "description": "Bing Chat Copilot sidebar ported from Edge to Chrome",
+  "version": "1.6.0",
   "icons": {
     "16": "icon.png",
     "32": "icon.png",
