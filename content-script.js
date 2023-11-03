@@ -1,6 +1,3 @@
-pdfjsLib.GlobalWorkerOptions.workerSrc =
-  "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.7.107/pdf.worker.min.js";
-
 async function extractPDFText(url) {
   const pdf = await pdfjsLib.getDocument(url).promise;
   console.debug("PDF pages", pdf.numPages);
