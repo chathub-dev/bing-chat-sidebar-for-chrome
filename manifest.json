@@ -31,6 +31,13 @@
     {
       "js": ["libs/pdf.min.js", "content-script.js"],
       "matches": ["<all_urls>"]
+    },
+    {
+      "js": ["shell/csp_disable.js"],
+      "matches": ["https://*.bing.com/*"],
+      "run_at": "document_idle",
+      "all_frames": true,
+      "world": "MAIN"
     }
   ],
   "commands": {
