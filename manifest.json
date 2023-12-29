@@ -33,6 +33,15 @@
       "matches": ["<all_urls>"]
     }
   ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_bing",
+        "enabled": true,
+        "path": "rules/bing.json"
+      }
+    ]
+  },
   "commands": {
     "_execute_action": {
       "suggested_key": {

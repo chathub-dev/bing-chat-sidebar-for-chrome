@@ -1,0 +1,20 @@
+[
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "Allow-CSP-From",
+          "operation": "set",
+          "value": "https://edgeservices.bing.com"
+        }
+      ]
+    },
+    "condition": {
+      "requestDomains": ["edgeservices.bing.com"],
+      "resourceTypes": ["sub_frame"]
+    }
+  }
+]
