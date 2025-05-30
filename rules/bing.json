@@ -6,14 +6,13 @@
       "type": "modifyHeaders",
       "responseHeaders": [
         {
-          "header": "Allow-CSP-From",
-          "operation": "set",
-          "value": "https://edgeservices.bing.com"
+          "header": "content-security-policy",
+          "operation": "remove"
         }
       ]
     },
     "condition": {
-      "requestDomains": ["edgeservices.bing.com"],
+      "requestDomains": ["copilot.microsoft.com"],
       "resourceTypes": ["sub_frame"]
     }
   }
